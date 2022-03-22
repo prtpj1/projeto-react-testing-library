@@ -1,6 +1,5 @@
 import React from 'react';
 import { screen } from '@testing-library/react';
-// import userEvent from '@testing-library/user-event';
 import renderWithRouter from './helpers/renderWithRouter';
 import App from '../App';
 
@@ -12,11 +11,8 @@ test('Tests if there is nav links at top of screen', () => {
   const linkFavorite = screen.getByRole('link', { name: /favorite/i });
 
   expect(linkHome).toBeInTheDocument();
-  // userEvent.click(linkHome);
   expect(linkAbout).toBeInTheDocument();
-  // userEvent.click(linkAbout);
   expect(linkFavorite).toBeInTheDocument();
-  // userEvent.click(linkFavorite);
 });
 
 // ! npx stryker run ./stryker/Pokedex.conf.json
