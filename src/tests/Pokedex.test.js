@@ -3,7 +3,6 @@ import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import renderWithRouter from './helpers/renderWithRouter';
 import App from '../App';
-// import { Pokemon } from '../components';
 
 describe('Test the Pokedex Component', () => {
   test('Test if exist a Heading h2 with the text "Encountered pokémons" ', () => {
@@ -38,6 +37,16 @@ describe('Test the Pokedex Component', () => {
     const btnAll = screen.getByRole('button', { name: /All/i });
     expect(btnAll).toBeDefined();
     userEvent.click(btnAll);
+  });
+
+  test('Test multiple clicks on button "Proximo Pokemon"', () => {
+    renderWithRouter(<App />);
+    const actualPokemon = screen.getByTestId('pokemon-name');
+    const nextPokemon = screen.getByTestId('pokemon-name');
+
+    expect(actualPokemon.innerHTML).toMatch(/Pikachu/i);
+    userEvent.click(screen.getByRole('button', { name: /Próximo pokémon/i }));
+    expect(nextPokemon.innerHTML).toMatch(/Charmander/i);
   });
 });
 
