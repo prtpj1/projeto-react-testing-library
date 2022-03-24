@@ -6,7 +6,6 @@ import { NotFound } from '../components';
 test('Test the NotFound Component', () => {
   renderWithRouter(<NotFound />);
 
-  // const notFoundH2 = screen.findByText(/No favorite pokemon/i);
   const notFoundH2 = screen.getByRole(
     'heading',
     { Level: 2,

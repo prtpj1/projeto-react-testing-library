@@ -8,9 +8,7 @@ const renderWithRouter = (param) => {
   return ({
     ...render(
       <Router history={ history }>
-        {' '}
         {param}
-        {' '}
       </Router>,
     ),
     history,
