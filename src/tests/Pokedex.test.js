@@ -49,35 +49,3 @@ describe('Test the Pokedex Component', () => {
     expect(nextPokemon.innerHTML).toMatch(/Charmander/i);
   });
 });
-
-// ! npx stryker run ./stryker/.conf.json
-
-// * Teste se página contém um heading h2 com o texto Encountered pokémons.
-
-// todo Teste se é exibido o próximo Pokémon da lista quando o botão Próximo pokémon é clicado.
-
-// todo O botão deve conter o texto Próximo pokémon;
-
-// todo Os próximos Pokémons da lista devem ser mostrados, um a um, ao clicar sucessivamente no botão;
-
-// todo O primeiro Pokémon da lista deve ser mostrado ao clicar no botão, se estiver no último Pokémon da lista;
-
-// todo Teste se é mostrado apenas um Pokémon por vez.
-
-// ? Teste se a Pokédex tem os botões de filtro.
-
-// ? Deve existir um botão de filtragem para cada tipo de Pokémon, sem repetição.
-
-// ? A partir da seleção de um botão de tipo, a Pokédex deve circular somente pelos pokémons daquele tipo;
-
-// ? O texto do botão deve corresponder ao nome do tipo, ex. Psychic;
-
-// ? O botão All precisa estar sempre visível.
-
-// todo Teste se a Pokédex contém um botão para resetar o filtro
-
-// todo O texto do botão deve ser All;
-
-// todo A Pokedéx deverá mostrar os Pokémons normalmente (sem filtros) quando o botão All for clicado;
-
-// todo Ao carregar a página, o filtro selecionado deverá ser All;
