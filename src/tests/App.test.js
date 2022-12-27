@@ -14,21 +14,3 @@ test('Tests if there is nav links at top of screen', () => {
   expect(linkAbout).toBeInTheDocument();
   expect(linkFavorite).toBeInTheDocument();
 });
-
-// ! npx stryker run ./stryker/.conf.json
-
-// Teste se o topo da aplicação contém um conjunto fixo de links de navegação.
-
-// O primeiro link deve possuir o texto Home.
-
-// O segundo link deve possuir o texto About.
-
-// O terceiro link deve possuir o texto Favorite Pokémons.
-
-// TODO: Teste se a aplicação é redirecionada para a página inicial, na URL / ao clicar no link Home da barra de navegação.
-
-// TODO: Teste se a aplicação é redirecionada para a página de About, na URL /about, ao clicar no link About da barra de navegação.
-
-// TODO:  Teste se a aplicação é redirecionada para a página de Pokémons Favoritados, na URL /favorites, ao clicar no link Favorite Pokémons da barra de navegação.
-
-// TODO:  Teste se a aplicação é redirecionada para a página Not Found ao entrar em uma URL desconhecida.
