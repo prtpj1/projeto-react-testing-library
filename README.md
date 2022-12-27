@@ -9,6 +9,7 @@ A aplicação em React foi desenvolvida pelo pessoal da Trybe. Eu apenas desenvo
 <h2>Tecnologias Utilizadas</h2>
 
 <h4>FrontEnd:</h4>
+
 * RTL
 * Jest
 
