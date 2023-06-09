@@ -11,19 +11,19 @@ A aplicação em React foi desenvolvida pelo pessoal da Trybe. Eu apenas desenvo
 ## Tecnologias Utilizadas
 
 ### FrontEnd:
-
 - RTL
 - Jest
 
 <img src="https://github.com/prtpj1/prtpj1/blob/main/Github%20Imgs/RTL2.png" width="50" height="50" alt="RTL" /><img src="https://github.com/prtpj1/prtpj1/blob/main/Github%20Imgs/Jest2.png" width="50" height="50" alt="Redux" />
 
 ## Como rodar a aplicação?
-
-1. Clone o repositório: </br>
+- Clone o repositório: </br>
 `git clone git@github.com:prtpj1/projeto-react-testing-library.git` 
-2. Instale as dependências: </br>
+- Acesse a pasta do projeto: <br>
+`cd projeto-react-testing-library`
+- Instale as dependências: </br>
 `npm install`
-3. Rode os testes: </br>
+- Rode os testes: </br>
 `npm test` </br>
 Ou se desejar testar um arquivo especifico: </br>
 `npm test ./src/tests/<nome do arquivo>.test.js`
